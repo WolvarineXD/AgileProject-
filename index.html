@@ -7,6 +7,9 @@
     <meta name="description" content="Showcasing India's Digital Advancements" />
     <meta name="author" content="India Digital Vision" />
 
+    <!-- Base path for GitHub Pages deployment -->
+    <base href="/AgileProject-/" />
+
     <!-- OpenGraph Meta Tags -->
     <meta property="og:title" content="India Digital Vision" />
     <meta property="og:description" content="Showcasing India's Digital Advancements" />
@@ -18,23 +21,20 @@
     <meta name="twitter:site" content="@indiadigitalvision" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <!-- Preload Vite client (helps with HMR in development) -->
-    <link rel="modulepreload" href="/@vite/client" />
-    
-    <!-- Favicon (replace with your actual favicon) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   </head>
 
   <body>
     <div id="root"></div>
-    
-    <!-- Vite Entry Point (critical change - relative path) -->
-    <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Third-party script with proper attributes -->
-    <script 
-      src="https://cdn.gpteng.co/gptengineer.js" 
-      type="module" 
+
+    <!-- Entry point -->
+    <script type="module" src="./src/main.tsx"></script>
+
+    <!-- Optional third-party script -->
+    <script
+      src="https://cdn.gpteng.co/gptengineer.js"
+      type="module"
       crossorigin
       defer
     ></script>
