@@ -55,5 +55,6 @@ export default defineConfig({
       },
     },
   },
-  base: "/", // Changed from "./" to "/" for Vercel compatibility
+  },
+  base: "/AgileProject-/", 
 });
